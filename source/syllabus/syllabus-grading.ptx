@@ -1,0 +1,90 @@
+  <section xml:id="grading">
+    <title>Course Requirements and Grading</title>
+    <!--Edit this example as necessary for your course.-->
+    <p>
+      Final grades will be determined using the following assignment categories (descriptions below):
+    </p>
+    <tabular>
+      <row header="yes">
+        <cell>Assignment Category</cell> <cell>Weight</cell>
+      </row>
+      <row>
+        <cell>Homework</cell> <cell>30%</cell>
+      </row>
+      <row>
+        <cell>Three Midterm Exams</cell> <cell>15% each</cell>
+      </row>
+      <row>
+        <cell>Cumulative Final Exam</cell> <cell>25%</cell>
+      </row>
+    </tabular>
+    <p>
+      Grading Scale
+    </p>
+    <tabular>
+      <row header="yes">
+        <cell>Letter Grade</cell><cell>Point Range (<m>P</m>)</cell>
+      </row>
+      <row>
+        <cell>A </cell><cell><m>P &gt;93</m></cell>
+      </row>
+      <row>
+        <cell>A-</cell><cell><m>90\leq P &lt; 93</m></cell>
+      </row>
+      <row>
+        <cell>B+</cell><cell><m>87\leq P &lt; 90</m></cell>
+      </row>
+      <row>
+        <cell>B</cell><cell><m>83\leq P &lt; 87</m></cell>
+      </row>
+      <row>
+        <cell>B-</cell><cell><m>80\leq P &lt; 83</m></cell>
+      </row>
+      <row>
+        <cell>C+</cell><cell><m>77\leq P &lt; 80</m></cell>
+      </row>
+      <row>
+        <cell>C</cell><cell><m>83\leq P &lt; 87</m></cell>
+      </row>
+      <row>
+        <cell>C-</cell><cell><m>70\leq P &lt; 73</m></cell>
+      </row>
+      <row>
+        <cell>D+</cell><cell><m>67\leq P &lt; 70</m></cell>
+      </row>
+      <row>
+        <cell>D</cell><cell><m>63\leq P &lt; 67</m></cell>
+      </row>
+      <row>
+        <cell>D-</cell><cell><m>60\leq P &lt; 63</m></cell>
+      </row>
+      <row>
+        <cell>F</cell><cell><m> P &lt; 60</m></cell>
+      </row>
+    </tabular>
+
+  
+  <paragraphs xml:id="homework">
+    <title>Homework</title>
+    <p>
+    Homework will be assigned daily and due two class periods later. Each problem will be graded on a scale from 0 to 3. A grade of 0 indicates there is nothing correct about your solution. A grade of 3 indicates your solution is correct with no mistakes. A grade of 2 is mostly correct, with minor mistakes. A grade of 1 has a correct idea, but needs some serious work.
+    </p>
+    <p>
+    Additional assignments for Math 483 will be due weekly. 
+    </p>
+
+  </paragraphs>
+
+  <paragraphs xml:id="midterm-exams">
+    <title>Midterm Exams</title>
+    <p>
+      There will be three midterm exams given in class on 2/6, 3/6, and 4/10. The class day before exams will be reserved for review. 
+    </p>
+  </paragraphs>
+  <paragraphs xml:id="final">
+    <title>Cumulative Final Exam</title>
+    <p>
+      Your cumulative final exam will be Wednesday, April 29, from 12-2pm.
+    </p>
+  </paragraphs>
+</section>
