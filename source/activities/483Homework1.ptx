@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--uncomment <pretext> and <article> tags at the beginning and end for standalone pdf generation-->
+<!--pretext-->
+<!--article-->
+<worksheet margin="1in" bottom="1.25cm">
+    <title>Math 483 Homework 1</title>
+
+            
+	<objectives>
+		<ul>
+			<li>
+				<p>
+					Review uniform vs. pointwise convergence.
+				</p>
+			</li>
+            <li>
+                <p>
+                    Prove that Riemann integrals are well behaved with respect to uniform convergence.
+                </p>
+            </li>
+	  	</ul>
+    </objectives>
+    <introduction>
+        <p>
+            Our main goal this semester is to prove a theorem like Theorem 3.15 in your textbook (just a little different). To do so, we need to understand uniform convergence, and why it is nice.
+        </p>
+    </introduction>
+<page>
+
+<definition xml:id="pointwise-convergence">
+    <statement>
+        <p>
+            Let <m>b &gt; a</m>. We say the sequence <m>\{f_n\}_{n=0}^{\infty}</m> <term>converges pointwise</term> (written as <m>f_n\to f</m>) to <m>f</m> on <m>[a,b]</m> if for each <m>x\in [a,b]</m> and <m>\epsilon &gt; 0</m>, there is some <m>N\in \mathbb{N}</m> such that if <m>n\geq N</m>, then 
+            <md>
+                |f_n(x) - f(x)| &lt; \epsilon.
+            </md>
+            
+        </p>
+    </statement>
+</definition>
+
+<definition xml:id="uniform-convergence">
+    <statement>
+        <p>
+            Let <m>b &gt; a</m>. We say the sequence <m>\{f_n\}_{n=0}^{\infty}</m> <term>converges uniformy</term> (written as <m>f_n\xrightarrow[]{u}f</m>) to <m>f</m> on <m>[a,b]</m> if for each <m>\epsilon &gt; 0 </m>, there is some <m>N\in \mathbb{N}</m> such that if <m>n\geq N</m>, then 
+            <md>
+                |f_n(x) - f(x)| &lt; \epsilon
+            </md>
+            for all <m>x\in [a,b]</m>
+        </p>
+    </statement>
+</definition>
+
+<exercise><title>The Standard Example</title>
+<statement>
+    <p>
+        Let <m>f_n(x) = x^n</m> and let 
+        <md>f(x) =
+            \begin{cases}
+			0, &amp; x\in [0,1)\\
+            1, &amp; x=1.
+		 \end{cases}
+        </md>
+        Prove that <m>f_n \to f</m> pointwise on <m>[0,1]</m>, but not uniformly.
+    </p>
+</statement>
+</exercise>
+
+<exercise><title>Another Example</title>
+<statement>
+    <p>
+        Let
+        <md>f_n(x) =
+            \begin{cases}
+			n, &amp; x\in (0,1/n)\\
+            0, &amp; x\in [1/n,1]\cup \{0\}.
+		 \end{cases}
+            
+        </md>
+        Prove that <m>f_n\to 0</m> on <m>[0,1]</m>, but not uniformly.
+    </p>
+</statement>
+
+    
+</exercise>
+    
+<p>
+    Now we have an important theorem about uniform convergence.
+</p>
+
+<theorem xml:id="uniform-integral-limit">
+    <statement>
+        <p>
+            Let <m>\{f_n\}_{n=0}^{\infty}</m> be a sequence of functions that are Riemann integrable on <m>[a,b]</m>. If <m>f_n\xrightarrow[]{u}f</m>, then <m>f</m> is Riemann integrable and 
+            <md>
+                \lim_{n\to\infty}\int_a^b f_n(x)\,dx = \int_{a}^{b} f(x)\,dx.
+            </md>
+            
+        </p>
+    </statement>
+</theorem>
+
+<exercise>
+    <statement>
+        <p>
+            Prove the theorem given above. Here are some hints:
+            <ul>
+                <li>
+                    <p>
+                        Find an element of the sequence that is uniformly close to <m>f</m>. Use this to argue that <m>f</m> is bounded on <m>[a,b]</m>.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Find a partition of <m>[a,b]</m> so that the upper sum and lower sum of the function approximating <m>f</m> are close to one another.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Argue that this implies the upper and lower sums of <m>f</m> over this partition are close to one another. This will get you integrability.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Now argue the integral of <m>f</m> is the limit of the integral of the <m>f_n</m>'s.
+                    </p>
+                </li>
+            </ul>
+            You should be making some <m>\epsilon/3</m> arguments here.
+        </p>
+    </statement>
+</exercise>
+
+<exercise>
+    <statement>
+        <p>
+            Use one of the examples above to show uniform convergence is necessary in the previous theorem.
+        </p>
+    </statement>
+</exercise>
+
+
+</page>
+
+
+</worksheet>
+<!--/article-->
+<!--/pretext-->
