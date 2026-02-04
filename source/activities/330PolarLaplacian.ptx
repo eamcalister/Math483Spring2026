@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet margin="1in" bottom="1.25cm">
+  <title>Mean Value Property and Maximum Principle for Harmonic Functions (2D)</title>
+
+  <introduction>
+    <p>
+      In this worksheet, you will prove the mean value property for harmonic functions in
+      two dimensions using the polar form of the Laplacian, and then apply it to prove
+      the maximum principle.
+    </p>
+  </introduction>
+
+  <section>
+    <title>Harmonicity and Translation</title>
+
+    <exercise>
+      <statement>
+        <p>
+          A function <m>u</m> defined on an open set <m>\Omega \subset \mathbb{R}^2</m> is 
+          <term>harmonic</term> if <m>\Delta u = u_{xx} + u_{yy} = 0</m>.
+          Let <m>a = (a_1,a_2)</m> and define <m>v(x) = u(x + a)</m>.
+          Show that if <m>u</m> is harmonic on <m>\Omega</m>,
+          then <m>v</m> is harmonic on <m>\Omega - a</m>.
+        </p>
+      </statement>
+      <hint>
+        <p>
+          Compute <m>v_x, v_{xx}, v_y, v_{yy}</m> using the chain rule.
+        </p>
+      </hint>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Suppose <m>u</m> is harmonic on the disk <m>B_R(x_0)</m>.
+          Explain why no generality is lost in assuming the disk is centered at <m>0</m>
+          when proving the mean value property on circles.
+        </p>
+      </statement>
+      <hint>
+        <p>
+          Consider <m>v(x)=u(x + x_0)</m>.  
+          Circles centered at <m>x_0</m> become circles centered at <m>0</m>.
+        </p>
+      </hint>
+    </exercise>
+
+  </section>
+
+  <section>
+    <title>Mean Value Property via the Polar Laplacian</title>
+
+    <p>
+      Assume <m>u \in C^2(B_R(0))</m> and <m>\Delta u = 0</m> in <m>B_R(0)</m>.
+    </p>
+
+    <exercise>
+      <statement>
+        <p>
+          Define the circular average
+        </p>
+        <md>
+          A(r) = \frac{1}{2\pi} \int_0^{2\pi} u(r,\theta)\, d\theta.
+        </md>
+        <p>
+          Show that this equals the arclength average
+        </p>
+        <md>
+          A(r) = \frac{1}{2\pi r}\int_{\partial B_r(0)} u\, ds.
+        </md>
+      </statement>
+      <hint>
+        <p><m>ds = r\, d\theta</m> on <m>\partial B_r</m>.</p>
+      </hint>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>Show that</p>
+        <md>
+          A'(r) = \frac{1}{2\pi}\int_0^{2\pi} u_r(r,\theta)\, d\theta,
+        </md>
+        <md>
+          A''(r) = \frac{1}{2\pi}\int_0^{2\pi} u_{rr}(r,\theta)\, d\theta.
+        </md>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Recall the polar Laplacian:
+        </p>
+        <md>
+          \Delta u = u_{rr} + \frac{1}{r} u_r + \frac{1}{r^2} u_{\theta\theta}.
+        </md>
+        <p>
+          Since <m>u</m> is harmonic, multiply by <m>r^2</m> to obtain:
+        </p>
+        <md>
+          r^2 u_{rr} + r u_r + u_{\theta\theta} = 0.
+        </md>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Integrate 
+        </p>
+        <md>
+          r^2 u_{rr} + r u_r + u_{\theta\theta} = 0
+        </md>
+        <p>
+          from <m>0</m> to <m>2\pi</m> in <m>\theta</m> to get:
+        </p>
+        <md>
+          r^2 \int_0^{2\pi} u_{rr}\, d\theta
+          + r \int_0^{2\pi} u_r\, d\theta
+          + \int_0^{2\pi} u_{\theta\theta}\, d\theta = 0.
+        </md>
+
+        <p>Explain why</p>
+        <md>
+          \int_0^{2\pi} u_{\theta\theta}\, d\theta = 0.
+        </md>
+      </statement>
+      <hint>
+        <p>
+          <m>\theta \mapsto u(r,\theta)</m> is <m>2\pi</m>–periodic, so
+          <m>\int u_{\theta\theta} = u_\theta(2\pi)-u_\theta(0)</m>.
+        </p>
+      </hint>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>Substitute the formulas for <m>A'(r)</m> and <m>A''(r)</m> to get:</p>
+        <md>
+          rA''(r) + A'(r) = 0.
+        </md>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Solve this ODE. Show:
+        </p>
+        <md>
+          (r A'(r))' = 0,
+        </md>
+        <p>
+          hence
+        </p>
+        <md>
+          rA'(r) = C.
+        </md>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Argue that <m>C = 0</m> using boundedness of <m>A(r)</m> as <m>r \to 0^+</m>.
+          Conclude <m>A'(r)=0</m> and <m>A(r)</m> is constant.
+        </p>
+      </statement>
+      <hint>
+        <p>
+          Otherwise <m>A(r) = C\ln r + \text{constant}</m> blows up near <m>0</m>.
+        </p>
+      </hint>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>Show:</p>
+        <md>
+          \lim_{r\to 0^+} A(r) = u(0).
+        </md>
+        <p>
+          Conclude the mean value property:
+        </p>
+        <md>
+          u(0) = \frac{1}{2\pi}\int_0^{2\pi} u(r,\theta)\, d\theta.
+        </md>
+      </statement>
+    </exercise>
+
+  </section>
+
+  <section>
+    <title>The Maximum Principle</title>
+
+    <exercise>
+      <statement>
+        <p>
+          Let <m>x_0 \in \Omega</m>. Using translation, show:
+        </p>
+        <md>
+          u(x_0) = \frac{1}{2\pi r}\int_{\partial B_r(x_0)} u\, ds
+        </md>
+        <p>
+          whenever <m>\overline{B_r(x_0)} \subset \Omega</m>.
+        </p>
+      </statement>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Suppose <m>u</m> attains its maximum at the interior point <m>x_0</m>.
+          Show:
+        </p>
+        <md>
+          u(x)=u(x_0) \quad \text{for all } x\in \partial B_r(x_0).
+        </md>
+      </statement>
+      <hint>
+        <p>
+          An average equals the maximum only if all terms equal the maximum.
+        </p>
+      </hint>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Show that if <m>u</m> is harmonic on <m>B_r(x_0)</m> and constant on
+          <m>\partial B_r(x_0)</m>, then <m>u</m> is constant on the whole disk.
+        </p>
+      </statement>
+      <hint>
+        <p>
+          Apply mean value property to <m>w = u - M</m>.
+        </p>
+      </hint>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Prove the <em>Strong Maximum Principle</em>:
+        </p>
+        <md>
+          \text{If } u \text{ is harmonic on a connected } \Omega \text{ and attains an interior maximum, then } u \text{ is constant.}
+        </md>
+      </statement>
+      <hint>
+        <p>
+          Show the set where <m>u = u(x_0)</m> is open and closed.
+        </p>
+      </hint>
+    </exercise>
+
+    <exercise>
+      <statement>
+        <p>
+          Conclude the boundary maximum principle:
+        </p>
+        <md>
+          \max_{\overline{\Omega}} u = \max_{\partial\Omega} u,\qquad
+          \min_{\overline{\Omega}} u = \min_{\partial\Omega} u.
+        </md>
+      </statement>
+    </exercise>
+
+  </section>
+
+</worksheet>
