@@ -10,7 +10,16 @@
     </p>
   </introduction>
 
-  <section>
+  <definition xml:id="harmonic">
+    <statement>
+      <p>
+        A function <m>u</m> defined on an open set <m>\Omega \subset \mathbb{R}^2</m> is 
+          <term>harmonic</term> if <m>\Delta u = u_{xx} + u_{yy} = 0</m>.
+      </p>
+    </statement>
+  </definition>
+
+  <!--section>
     <title>Harmonicity and Translation</title>
 
     <exercise>
@@ -46,16 +55,14 @@
       </hint>
     </exercise>
 
-  </section>
-
-  <section>
-    <title>Mean Value Property</title>
+  </section-->
+  <page>
 
     <p>
-      Assume <m>u \in C^2(B_R(0))</m> and <m>\Delta u = 0</m> in <m>B_R(0)</m>.
+      Assume <m>u</m> is harmonic in some open set <m>\Omega</m> with <m>B_r(0)\subseteq \Omega</m>.
     </p>
 
-    <exercise><title>Defining <m>A(r)</m> and Showing it is Constant.</title>
+    <exercise><title>Defining <m>A(r)</m> and Showing it is Constant</title>
       <introduction>
         <p>
           Define the circular average
@@ -70,21 +77,14 @@
         </md>
       </p>
       <p>
-        Our goal is to show that, under the given hypotehses, <m>A(r)</m> is constant.
+        Our goal is to show that, under the given hypotheses, <m>A(r)</m> is constant.
       </p>
     </introduction>
 
     <task>
       <statement>
-        <p>Notice that</p>
-        <md>
-          A'(r) = \frac{1}{2\pi}\int_0^{2\pi} u_r(r,\theta)\, d\theta,
-        </md>
-        <md>
-          A''(r) = \frac{1}{2\pi}\int_0^{2\pi} u_{rr}(r,\theta)\, d\theta.
-        </md>
         <p>
-          Also, the polar Laplacian of <m>u</m> is given by
+          Observe, the polar Laplacian of <m>u</m> is given by
         </p>
         <md>
           \Delta u = u_{rr} + \frac{1}{r} u_r + \frac{1}{r^2} u_{\theta\theta}.
@@ -131,15 +131,17 @@
       </statement>
     </task>
   </exercise>
+</page>
+<page>
 
-    <exercise>
+<exercise>
       <statement>
         <p>Show:</p>
         <md>
           \lim_{r\to 0^+} A(r) = u(0).
         </md>
         <p>
-          Conclude the mean value property:
+          Conclude the mean value property for a circle centered at the origin:
         </p>
         <md>
           u(0) = \frac{1}{2\pi}\int_0^{2\pi} u(r,\theta)\, d\theta.
@@ -147,12 +149,9 @@
       </statement>
     </exercise>
 
-  </section>
-
-  <section>
-    <title>The Maximum Principle</title>
-
-    <exercise>
+      <exercise><title>Mean Value Property for Circles</title>
+      
+      
       <statement>
         <p>
           Let <m>x_0 \in \Omega</m>. Using translation, show:
@@ -166,7 +165,25 @@
       </statement>
     </exercise>
 
-    <exercise>
+
+</page>
+<page>
+    <exercise>   <title>The Mean Value Property for Disks</title>
+     <statement>
+      <p>
+        Let <m>x_0\in\Omega</m>. Use the mean value property for circles to show that
+        <md>
+          u(x_0) = \frac{1}{\pi R^2}\int\int_{B_R(x_0)} u(r,\theta) dA.
+        </md>
+        Hint: Do a double integral in polar coordinates in the <m>d\theta dr</m> order. (we started using <m>R</m> because we need to integrate with respect to <m>r</m>.)
+      </p>
+     </statement> 
+
+
+    </exercise>
+
+
+    <!--exercise>
       <statement>
         <p>
           Suppose <m>u</m> attains its maximum at the interior point <m>x_0</m>.
@@ -176,26 +193,21 @@
           u(x)=u(x_0) \quad \text{for all } x\in \partial B_r(x_0).
         </md>
       </statement>
-      <!--hint>
-        <p>
-          An average equals the maximum only if all terms equal the maximum.
-        </p>
-      </hint-->
-    </exercise>
+    </exercise-->
 
-    <exercise>
+    <!--exercise>
       <statement>
         <p>
           Show that if <m>u</m> is harmonic on <m>B_r(x_0)</m> and constant on
           <m>\partial B_r(x_0)</m>, then <m>u</m> is constant on the whole disk.
         </p>
       </statement>
-      <!--hint>
+      <hint>
         <p>
           Apply mean value property to <m>w = u - M</m>.
         </p>
-      </hint-->
-    </exercise>
+      </hint>
+    </exercise-->
 
     <!--exercise>
       <statement>
@@ -225,6 +237,6 @@
       </statement>
     </exercise-->
 
-  </section>
+  </page>
 
 </worksheet>
