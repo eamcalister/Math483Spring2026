@@ -49,48 +49,42 @@
   </section>
 
   <section>
-    <title>Mean Value Property via the Polar Laplacian</title>
+    <title>Mean Value Property</title>
 
     <p>
       Assume <m>u \in C^2(B_R(0))</m> and <m>\Delta u = 0</m> in <m>B_R(0)</m>.
     </p>
 
-    <exercise>
-      <statement>
+    <exercise><title>Defining <m>A(r)</m> and Showing it is Constant.</title>
+      <introduction>
         <p>
           Define the circular average
-        </p>
         <md>
           A(r) = \frac{1}{2\pi} \int_0^{2\pi} u(r,\theta)\, d\theta.
         </md>
-        <p>
-          Show that this equals the arclength average
-        </p>
+
+          Observe that this equals the arclength average
+
         <md>
           A(r) = \frac{1}{2\pi r}\int_{\partial B_r(0)} u\, ds.
         </md>
-      </statement>
-      <hint>
-        <p><m>ds = r\, d\theta</m> on <m>\partial B_r</m>.</p>
-      </hint>
-    </exercise>
+      </p>
+      <p>
+        Our goal is to show that, under the given hypotehses, <m>A(r)</m> is constant.
+      </p>
+    </introduction>
 
-    <exercise>
+    <task>
       <statement>
-        <p>Show that</p>
+        <p>Notice that</p>
         <md>
           A'(r) = \frac{1}{2\pi}\int_0^{2\pi} u_r(r,\theta)\, d\theta,
         </md>
         <md>
           A''(r) = \frac{1}{2\pi}\int_0^{2\pi} u_{rr}(r,\theta)\, d\theta.
         </md>
-      </statement>
-    </exercise>
-
-    <exercise>
-      <statement>
         <p>
-          Recall the polar Laplacian:
+          Also, the polar Laplacian of <m>u</m> is given by
         </p>
         <md>
           \Delta u = u_{rr} + \frac{1}{r} u_r + \frac{1}{r^2} u_{\theta\theta}.
@@ -101,49 +95,17 @@
         <md>
           r^2 u_{rr} + r u_r + u_{\theta\theta} = 0.
         </md>
-      </statement>
-    </exercise>
-
-    <exercise>
-      <statement>
         <p>
-          Integrate 
+          Use these facts (and integration) to prove that
         </p>
-        <md>
-          r^2 u_{rr} + r u_r + u_{\theta\theta} = 0
-        </md>
-        <p>
-          from <m>0</m> to <m>2\pi</m> in <m>\theta</m> to get:
-        </p>
-        <md>
-          r^2 \int_0^{2\pi} u_{rr}\, d\theta
-          + r \int_0^{2\pi} u_r\, d\theta
-          + \int_0^{2\pi} u_{\theta\theta}\, d\theta = 0.
-        </md>
-
-        <p>Explain why</p>
-        <md>
-          \int_0^{2\pi} u_{\theta\theta}\, d\theta = 0.
-        </md>
-      </statement>
-      <hint>
-        <p>
-          <m>\theta \mapsto u(r,\theta)</m> is <m>2\pi</m>–periodic, so
-          <m>\int u_{\theta\theta} = u_\theta(2\pi)-u_\theta(0)</m>.
-        </p>
-      </hint>
-    </exercise>
-
-    <exercise>
-      <statement>
-        <p>Substitute the formulas for <m>A'(r)</m> and <m>A''(r)</m> to get:</p>
+        
         <md>
           rA''(r) + A'(r) = 0.
         </md>
       </statement>
-    </exercise>
+    </task>
 
-    <exercise>
+    <task>
       <statement>
         <p>
           Solve this ODE. Show:
@@ -158,21 +120,17 @@
           rA'(r) = C.
         </md>
       </statement>
-    </exercise>
+    </task>
 
-    <exercise>
+    <task>
       <statement>
         <p>
           Argue that <m>C = 0</m> using boundedness of <m>A(r)</m> as <m>r \to 0^+</m>.
           Conclude <m>A'(r)=0</m> and <m>A(r)</m> is constant.
         </p>
       </statement>
-      <hint>
-        <p>
-          Otherwise <m>A(r) = C\ln r + \text{constant}</m> blows up near <m>0</m>.
-        </p>
-      </hint>
-    </exercise>
+    </task>
+  </exercise>
 
     <exercise>
       <statement>
@@ -218,11 +176,11 @@
           u(x)=u(x_0) \quad \text{for all } x\in \partial B_r(x_0).
         </md>
       </statement>
-      <hint>
+      <!--hint>
         <p>
           An average equals the maximum only if all terms equal the maximum.
         </p>
-      </hint>
+      </hint-->
     </exercise>
 
     <exercise>
@@ -232,14 +190,14 @@
           <m>\partial B_r(x_0)</m>, then <m>u</m> is constant on the whole disk.
         </p>
       </statement>
-      <hint>
+      <!--hint>
         <p>
           Apply mean value property to <m>w = u - M</m>.
         </p>
-      </hint>
+      </hint-->
     </exercise>
 
-    <exercise>
+    <!--exercise>
       <statement>
         <p>
           Prove the <em>Strong Maximum Principle</em>:
@@ -265,7 +223,7 @@
           \min_{\overline{\Omega}} u = \min_{\partial\Omega} u.
         </md>
       </statement>
-    </exercise>
+    </exercise-->
 
   </section>
 
