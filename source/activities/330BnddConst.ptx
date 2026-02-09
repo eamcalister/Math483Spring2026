@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<worksheet margin="1in" bottom="1.25cm">
+  <title>Bounded Harmonic Functions and Differentiable Functions of a Complex Variable</title>
+<page>
+  <introduction>
+    <p>
+      In this worksheet, you will prove one major additional property of harmonic functions. 
+    </p>
+  </introduction>
+
+  <exercise><title>Bounded Harmonic Functions are Constant</title>
+  <introduction>
+    <p>
+        Suppose <m>u</m> is harmonic on <m>\mathbb{R}^2</m> and <m>|u|&lt; M</m> for some <m>M&gt; 0</m>. Prove that <m>u</m> is a constant function as follows:
+    </p>
+
+</introduction>
+<task>
+    <statement>
+        <p>
+            Let <m>x_1</m> and <m>x_2</m> be points in <m>\mathbb{R}^2</m>. Explain why
+            <md>
+                u(x_1) - u(x_2) = \frac{1}{\pi R^2}\int\int_{B_R(x_1)} u(r,\theta) dA - \frac{1}{\pi R^2}\int\int_{B_R(x_2)} u(r,\theta) dA
+            </md>
+            where <m>R</m> is the same for both integrals.
+        </p>
+    </statement>
+</task>
+<task>
+    <statement>
+        <p>
+            Let <m>d = \|x_1 - x_2\|</m>. Combine the integrals from the last part into a single integral and sketch its region of integration. Give a geometric/algebraic argument that the area of this region is less than <m>\pi d(2R + d)</m>. 
+        </p>
+    </statement>
+</task>
+<task>
+    <statement>
+        <p>
+            Give an upper bound for <m>|u(x_1) - u(x_2)|</m> based on previous parts and show that this approaches zero as <m>R\to\infty</m>. Say why this proves <m>u</m> is constant.
+        </p>
+    </statement>
+</task>
+
+  
+    
+  </exercise>
+
+  <p>
+    Consider a function <m>f:\mathbb{C}\to\mathbb{C}</m>. Observe that letting <m>z = x+iy</m>, we can write 
+    <md>
+        f(z) = u(x,y) + iv(x,y).
+    </md>
+    We say <m>f</m> is differentiable if 
+    <md>
+        <mrow> f'(z) = \amp \lim_{\Delta z \to 0}\frac{f(z+\Delta z) - f(z)}{\Delta z} </mrow>
+        <mrow>  = \amp \lim_{\Delta x, \Delta y\to 0}\frac{u(x + \Delta x , y + \Delta y) - u(x,y)}{\sqrt{\Delta x^2 + \Delta y^2}} + i \frac{v(x + \Delta x , y + \Delta y) - v(x,y)}{\sqrt{\Delta x^2 + \Delta y^2}}</mrow>
+    </md>
+    exists.
+    
+  </p>
+
+  <exercise>
+    <statement>
+    <p>
+        Suppose a function <m>f:\mathbb{C}\to\mathbb{C}</m> is differentiable. By taking limits with <m>\Delta x = 0</m> and <m>\Delta y = 0</m> separately, show that 
+    <md>
+       u_x = v_y \text{ and } u_y = -v_x. 
+    </md>
+    </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+        <p>
+                With <m>u</m> and <m>v</m> as above, show that <m>u</m> and <m>v</m> are harmonic. Thus, conclude that bounded differentiable functions of a complex variable are constant (what does boundedness mean here?). 
+        </p>
+    </statement>
+  </exercise>
+
+</page>
+
+</worksheet>

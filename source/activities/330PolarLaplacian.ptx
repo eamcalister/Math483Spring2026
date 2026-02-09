@@ -5,8 +5,7 @@
   <introduction>
     <p>
       In this worksheet, you will prove the mean value property for harmonic functions in
-      two dimensions using the polar form of the Laplacian, and then apply it to prove
-      the maximum principle.
+      two dimensions using the polar form of the Laplacian.
     </p>
   </introduction>
 
@@ -166,8 +165,6 @@
     </exercise>
 
 
-</page>
-<page>
     <exercise>   <title>The Mean Value Property for Disks</title>
      <statement>
       <p>
