@@ -97,7 +97,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Math 483 Homework 2",
-  "body": " Math 483 Homework 2     Review some convergence of series of functions (pointwise and uniform).    Prove a test for uniform and absolute convergence of series.      Two Convergence Facts for Series   In order to work with series of functions, we need to be able to work with series of numbers.     Let be a sequence of real numbers. Define what it means for the series to converge.      Prove the Comparison Test: If and are sequences with and converges, then so does       Prove that if converges, then so does (absolute convergence implies convergence). Hint: Use absolute convergence to show that the sequence of partial sums of is a Cauchy sequence.     Uniform vs. Pointwise Convergence of Series   Here we review what it means for series of functions to converge pointwise and uniformly and do an example.     Let be a sequence of real-valued functions of a real variable. Define what it means for the series to converge to a function pointwise and uniformly (two definitions).      Prove that the Taylor\/Maclaurin series for and do not converge uniformly to these functions on .     The Weierstrass -Test   An important result for proving Fourier series converge is the following. Prove it.  Suppose is a sequence of functions such that (for all ) for some sequence of positive constants , where converges. Then the series converges absolutely and uniformly on .     "
+  "body": " Math 483 Homework 2     Review some convergence of series of functions (pointwise and uniform).    Prove a test for uniform and absolute convergence of series.      Two Convergence Facts for Series   In order to work with series of functions, we need to be able to work with series of numbers.     Let be a sequence of real numbers. Define what it means for the series to converge.      Prove the Comparison Test: If and are sequences with and converges, then so does       Prove that if converges, then so does (absolute convergence implies convergence). Hint: Use absolute convergence to show that the sequence of partial sums of is a Cauchy sequence.     Uniform vs. Pointwise Convergence of Series   Here we review what it means for series of functions to converge pointwise and uniformly and do an example.     Let be a sequence of real-valued functions of a real variable. Define what it means for the series to converge to a function pointwise and uniformly (two definitions).      Prove that the Taylor\/Maclaurin series for and do not converge uniformly to these functions on .       The Weierstrass -Test   An important result for proving Fourier series converge is the following. Prove it.  Suppose is a sequence of functions such that (for all ) for some sequence of positive constants , where converges. Then the series converges absolutely and uniformly on .     "
 },
 {
   "id": "sec-section-name-5-2",
@@ -127,9 +127,9 @@ var ptx_lunr_docs = [
   "body": "Uniform vs. Pointwise Convergence of Series   Here we review what it means for series of functions to converge pointwise and uniformly and do an example.     Let be a sequence of real-valued functions of a real variable. Define what it means for the series to converge to a function pointwise and uniformly (two definitions).      Prove that the Taylor\/Maclaurin series for and do not converge uniformly to these functions on .    "
 },
 {
-  "id": "sec-section-name-5-3-3",
+  "id": "sec-section-name-5-4-1",
   "level": "2",
-  "url": "sec-section-name-5.html#sec-section-name-5-3-3",
+  "url": "sec-section-name-5.html#sec-section-name-5-4-1",
   "type": "Worksheet Exercise",
   "number": "3",
   "title": "The Weierstrass <span class=\"process-math\">\\(M\\)<\/span>-Test.",
