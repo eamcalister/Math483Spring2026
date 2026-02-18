@@ -96,8 +96,8 @@ var ptx_lunr_docs = [
   "url": "sec-section-name-5.html",
   "type": "Worksheet",
   "number": "",
-  "title": "Math 330 ODE Review",
-  "body": " Math 330 ODE Review     See how much ODE material we remember.    See if we can apply our knowledge of ODEs in new ways.      Before we begin the study of partial differential equations (PDEs), we need to make sure we have a strong command of ordinary differential equations (ODEs) and multivariable Calculus. These topics must be understood both from a procedural point of view and conceptually. In this worksheet you'll test your understanding and procedural proficiency with ODEs, on Wednesday we'll do multivariable Calculus. The goal right now is to find out where we stand with background material.    Terminology Questions  Here are some questions of terminology. Answer each of them in the context of the differential equations class you previously took.    What is a differential equation ?      What does it mean to solve a differential equation ?      Given two functions and , what is the convolution , , and what is it good for?      What is the  -function and what is it good for?     Solving Exercises   For each of these questions, and all that you answer from now on, you need to explain your reasoning as you go. At the end of the question, if possible, try to conclude with a statement saying why the answer you obtained makes sense from a practical point of view.     A brine solution containing kg of salt per liter of water flows into a L mixing vat at a rate of L\/min. A well-stirred mixture leaves at a rate of L\/min. If the vat is initially full of fresh water, find a formula for the quantity of salt in the tank as a function of time.      A damped oscillator is governed by the 2nd order ODE when no external force is applied to it. Its initial position is and has a velocity of . At , an external force of is applied. Show that, in the long run, is approximately a periodic function. What is the period and amplitude of this function?      Consider the second order ODE Suppose is a non-negative integer. By guessing a power series solution, show that this equation has a polynomial solution for some initial conditions. Does it have polynomial solutions for all initial conditions?      "
+  "title": "Math 483 Homework 2",
+  "body": " Math 483 Homework 2     Review some convergence of series of functions (pointwise and uniform).    Prove a test for uniform and absolute convergence of series.      Two Convergence Facts for Series   In order to work with series of functions, we need to be able to work with series of numbers.     Let be a sequence of real numbers. Define what it means for the series to converge.      Prove the Comparison Test: If and are sequences with and converges, then so does       Prove that if converges, then so does (absolute convergence implies convergence). Hint: Use absolute convergence to show that the sequence of partial sums of is a Cauchy sequence.     Uniform vs. Pointwise Convergence of Series   Here we review what it means for series of functions to converge pointwise and uniformly and do an example.     Let be a sequence of real-valued functions of a real variable. Define what it means for the series to converge to a function pointwise and uniformly (two definitions).      Prove that the Taylor\/Maclaurin series for and do not converge uniformly to these functions on .     The Weierstrass -Test   An important result for proving Fourier series converge is the following. Prove it.  Suppose is a sequence of functions such that (for all ) for some sequence of positive constants , where converges. Then the series converges absolutely and uniformly on .     "
 },
 {
   "id": "sec-section-name-5-2",
@@ -106,39 +106,84 @@ var ptx_lunr_docs = [
   "type": "Objectives",
   "number": "",
   "title": "",
-  "body": "   See how much ODE material we remember.    See if we can apply our knowledge of ODEs in new ways.    "
+  "body": "   Review some convergence of series of functions (pointwise and uniform).    Prove a test for uniform and absolute convergence of series.    "
 },
 {
   "id": "sec-section-name-5-3-1",
   "level": "2",
   "url": "sec-section-name-5.html#sec-section-name-5-3-1",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "Two Convergence Facts for Series.",
+  "body": "Two Convergence Facts for Series   In order to work with series of functions, we need to be able to work with series of numbers.     Let be a sequence of real numbers. Define what it means for the series to converge.      Prove the Comparison Test: If and are sequences with and converges, then so does       Prove that if converges, then so does (absolute convergence implies convergence). Hint: Use absolute convergence to show that the sequence of partial sums of is a Cauchy sequence.    "
+},
+{
+  "id": "sec-section-name-5-3-2",
+  "level": "2",
+  "url": "sec-section-name-5.html#sec-section-name-5-3-2",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "Uniform vs. Pointwise Convergence of Series.",
+  "body": "Uniform vs. Pointwise Convergence of Series   Here we review what it means for series of functions to converge pointwise and uniformly and do an example.     Let be a sequence of real-valued functions of a real variable. Define what it means for the series to converge to a function pointwise and uniformly (two definitions).      Prove that the Taylor\/Maclaurin series for and do not converge uniformly to these functions on .    "
+},
+{
+  "id": "sec-section-name-5-3-3",
+  "level": "2",
+  "url": "sec-section-name-5.html#sec-section-name-5-3-3",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "The Weierstrass <span class=\"process-math\">\\(M\\)<\/span>-Test.",
+  "body": "The Weierstrass -Test   An important result for proving Fourier series converge is the following. Prove it.  Suppose is a sequence of functions such that (for all ) for some sequence of positive constants , where converges. Then the series converges absolutely and uniformly on .   "
+},
+{
+  "id": "sec-section-name-6",
+  "level": "1",
+  "url": "sec-section-name-6.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Math 330 ODE Review",
+  "body": " Math 330 ODE Review     See how much ODE material we remember.    See if we can apply our knowledge of ODEs in new ways.      Before we begin the study of partial differential equations (PDEs), we need to make sure we have a strong command of ordinary differential equations (ODEs) and multivariable Calculus. These topics must be understood both from a procedural point of view and conceptually. In this worksheet you'll test your understanding and procedural proficiency with ODEs, on Wednesday we'll do multivariable Calculus. The goal right now is to find out where we stand with background material.    Terminology Questions  Here are some questions of terminology. Answer each of them in the context of the differential equations class you previously took.    What is a differential equation ?      What does it mean to solve a differential equation ?      Given two functions and , what is the convolution , , and what is it good for?      What is the  -function and what is it good for?     Solving Exercises   For each of these questions, and all that you answer from now on, you need to explain your reasoning as you go. At the end of the question, if possible, try to conclude with a statement saying why the answer you obtained makes sense from a practical point of view.     A brine solution containing kg of salt per liter of water flows into a L mixing vat at a rate of L\/min. A well-stirred mixture leaves at a rate of L\/min. If the vat is initially full of fresh water, find a formula for the quantity of salt in the tank as a function of time.      A damped oscillator is governed by the 2nd order ODE when no external force is applied to it. Its initial position is and has a velocity of . At , an external force of is applied. Show that, in the long run, is approximately a periodic function. What is the period and amplitude of this function?      Consider the second order ODE Suppose is a non-negative integer. By guessing a power series solution, show that this equation has a polynomial solution for some initial conditions. Does it have polynomial solutions for all initial conditions?      "
+},
+{
+  "id": "sec-section-name-6-2",
+  "level": "2",
+  "url": "sec-section-name-6.html#sec-section-name-6-2",
+  "type": "Objectives",
+  "number": "",
+  "title": "",
+  "body": "   See how much ODE material we remember.    See if we can apply our knowledge of ODEs in new ways.    "
+},
+{
+  "id": "sec-section-name-6-3-1",
+  "level": "2",
+  "url": "sec-section-name-6.html#sec-section-name-6-3-1",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "both "
 },
 {
-  "id": "sec-section-name-5-4-1",
+  "id": "sec-section-name-6-4-1",
   "level": "2",
-  "url": "sec-section-name-5.html#sec-section-name-5-4-1",
+  "url": "sec-section-name-6.html#sec-section-name-6-4-1",
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "Terminology Questions.",
   "body": "Terminology Questions  Here are some questions of terminology. Answer each of them in the context of the differential equations class you previously took.    What is a differential equation ?      What does it mean to solve a differential equation ?      Given two functions and , what is the convolution , , and what is it good for?      What is the  -function and what is it good for?    "
 },
 {
-  "id": "sec-section-name-5-4-2",
+  "id": "sec-section-name-6-4-2",
   "level": "2",
-  "url": "sec-section-name-5.html#sec-section-name-5-4-2",
+  "url": "sec-section-name-6.html#sec-section-name-6-4-2",
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "Solving Exercises.",
   "body": "Solving Exercises   For each of these questions, and all that you answer from now on, you need to explain your reasoning as you go. At the end of the question, if possible, try to conclude with a statement saying why the answer you obtained makes sense from a practical point of view.     A brine solution containing kg of salt per liter of water flows into a L mixing vat at a rate of L\/min. A well-stirred mixture leaves at a rate of L\/min. If the vat is initially full of fresh water, find a formula for the quantity of salt in the tank as a function of time.      A damped oscillator is governed by the 2nd order ODE when no external force is applied to it. Its initial position is and has a velocity of . At , an external force of is applied. Show that, in the long run, is approximately a periodic function. What is the period and amplitude of this function?      Consider the second order ODE Suppose is a non-negative integer. By guessing a power series solution, show that this equation has a polynomial solution for some initial conditions. Does it have polynomial solutions for all initial conditions?    "
 },
 {
-  "id": "sec-section-name-6",
+  "id": "sec-section-name-7",
   "level": "1",
-  "url": "sec-section-name-6.html",
+  "url": "sec-section-name-7.html",
   "type": "Worksheet",
   "number": "",
   "title": "Mean Value Property and Maximum Principle for Harmonic Functions (2D)",
@@ -147,79 +192,79 @@ var ptx_lunr_docs = [
 {
   "id": "harmonic",
   "level": "2",
-  "url": "sec-section-name-6.html#harmonic",
+  "url": "sec-section-name-7.html#harmonic",
   "type": "Definition",
   "number": "4",
   "title": "",
   "body": "  A function defined on an open set is harmonic if .   "
 },
 {
-  "id": "sec-section-name-6-4-2",
+  "id": "sec-section-name-7-4-2",
   "level": "2",
-  "url": "sec-section-name-6.html#sec-section-name-6-4-2",
+  "url": "sec-section-name-7.html#sec-section-name-7-4-2",
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "Defining <span class=\"process-math\">\\(A(r)\\)<\/span> and Showing it is Constant.",
   "body": "Defining and Showing it is Constant   Define the circular average Observe that this equals the arclength average   Our goal is to show that, under the given hypotheses, is constant.     Observe, the polar Laplacian of is given by   Since is harmonic, multiply by to obtain:   Use these facts (and integration) to prove that       Solve this ODE. Show:   hence       Argue that using boundedness of as . Conclude and is constant.    "
 },
 {
-  "id": "sec-section-name-6-5-1",
+  "id": "sec-section-name-7-5-1",
   "level": "2",
-  "url": "sec-section-name-6.html#sec-section-name-6-5-1",
+  "url": "sec-section-name-7.html#sec-section-name-7-5-1",
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
   "body": "  Show:   Conclude the mean value property for a circle centered at the origin:    "
 },
 {
-  "id": "sec-section-name-6-5-2",
+  "id": "sec-section-name-7-5-2",
   "level": "2",
-  "url": "sec-section-name-6.html#sec-section-name-6-5-2",
+  "url": "sec-section-name-7.html#sec-section-name-7-5-2",
   "type": "Worksheet Exercise",
   "number": "3",
   "title": "Mean Value Property for Circles.",
   "body": "Mean Value Property for Circles   Let . Using translation, show:   whenever .   "
 },
 {
-  "id": "sec-section-name-6-5-3",
+  "id": "sec-section-name-7-5-3",
   "level": "2",
-  "url": "sec-section-name-6.html#sec-section-name-6-5-3",
+  "url": "sec-section-name-7.html#sec-section-name-7-5-3",
   "type": "Worksheet Exercise",
   "number": "4",
   "title": "The Mean Value Property for Disks.",
   "body": " The Mean Value Property for Disks   Let . Use the mean value property for circles to show that Hint: Do a double integral in polar coordinates in the order. (we started using because we need to integrate with respect to .)   "
 },
 {
-  "id": "sec-section-name-7",
+  "id": "sec-section-name-8",
   "level": "1",
-  "url": "sec-section-name-7.html",
+  "url": "sec-section-name-8.html",
   "type": "Worksheet",
   "number": "",
   "title": "Bounded Harmonic Functions and Differentiable Functions of a Complex Variable",
   "body": " Bounded Harmonic Functions and Differentiable Functions of a Complex Variable    In this worksheet, you will prove one major additional property of harmonic functions.   Bounded Harmonic Functions are Constant   Suppose is harmonic on and for some . Prove that is a constant function as follows:     Let and be points in . Explain why where is the same for both integrals.      Let . Combine the integrals from the last part into a single integral and sketch its region of integration. Give a geometric\/algebraic argument that the area of this region is less than .      Give an upper bound for based on previous parts and show that this approaches zero as . Say why this proves is constant.     Consider a function . Observe that letting , we can write We say is differentiable if exists.    Suppose a function is differentiable. By taking limits with and separately, show that       With and as above, show that and are harmonic. Thus, conclude that bounded differentiable functions of a complex variable are constant (what does boundedness mean here?).     "
 },
 {
-  "id": "sec-section-name-7-2-2",
+  "id": "sec-section-name-8-2-2",
   "level": "2",
-  "url": "sec-section-name-7.html#sec-section-name-7-2-2",
+  "url": "sec-section-name-8.html#sec-section-name-8-2-2",
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "Bounded Harmonic Functions are Constant.",
   "body": "Bounded Harmonic Functions are Constant   Suppose is harmonic on and for some . Prove that is a constant function as follows:     Let and be points in . Explain why where is the same for both integrals.      Let . Combine the integrals from the last part into a single integral and sketch its region of integration. Give a geometric\/algebraic argument that the area of this region is less than .      Give an upper bound for based on previous parts and show that this approaches zero as . Say why this proves is constant.    "
 },
 {
-  "id": "sec-section-name-7-2-4",
+  "id": "sec-section-name-8-2-4",
   "level": "2",
-  "url": "sec-section-name-7.html#sec-section-name-7-2-4",
+  "url": "sec-section-name-8.html#sec-section-name-8-2-4",
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "",
   "body": "  Suppose a function is differentiable. By taking limits with and separately, show that    "
 },
 {
-  "id": "sec-section-name-7-2-5",
+  "id": "sec-section-name-8-2-5",
   "level": "2",
-  "url": "sec-section-name-7.html#sec-section-name-7-2-5",
+  "url": "sec-section-name-8.html#sec-section-name-8-2-5",
   "type": "Worksheet Exercise",
   "number": "3",
   "title": "",
