@@ -11,6 +11,7 @@
       </p>
     </introduction>
     <xi:include href="./activities/483Homework1.ptx"/>
+    <xi:include href="./activities/483Homework2.ptx"/>
     <xi:include href="./activities/330ODEReviewWorksheet.ptx"/>
     <xi:include href="./activities/330PolarLaplacian.ptx"/>
     <xi:include href="./activities/330BnddConst.ptx"/>
