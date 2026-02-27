@@ -269,6 +269,51 @@ var ptx_lunr_docs = [
   "number": "3",
   "title": "",
   "body": "  With and as above, show that and are harmonic. Thus, conclude that bounded differentiable functions of a complex variable are constant (what does boundedness mean here?).   "
+},
+{
+  "id": "sec-section-name-9",
+  "level": "1",
+  "url": "sec-section-name-9.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Math 330 Well-Posed Problems",
+  "body": " Math 330 Well-Posed Problems     Do exercise 2 in Section 2.3 of the textbook. Discuss existence of a solution only.      Consider Laplace's equation in the plane where is an open, bounded, and connected region in the plane. Show that this problem is stable. That is, show that if on , then the corresponding solutions to the boundary value problem are separated by at most on . Hint: Use Theorem 1.23 in the book.      Use the result of exericse #2 in Section 1.3 of the text to prove that solution to the Cauchy problem for the heat equation (from Section 2.1) are unique.      Consider the following non-proof of uniqueness of solutions to the Cauchy problem for the heat-equation:   Non-Proof: Suppose and are both solutions. Then is a solution to  Thus which is identically zero. Thus, for all and .   Question: Why isn't this a proof of uniqueness?     "
+},
+{
+  "id": "sec-section-name-9-2-1",
+  "level": "2",
+  "url": "sec-section-name-9.html#sec-section-name-9-2-1",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  Do exercise 2 in Section 2.3 of the textbook. Discuss existence of a solution only.   "
+},
+{
+  "id": "sec-section-name-9-2-2",
+  "level": "2",
+  "url": "sec-section-name-9.html#sec-section-name-9-2-2",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Consider Laplace's equation in the plane where is an open, bounded, and connected region in the plane. Show that this problem is stable. That is, show that if on , then the corresponding solutions to the boundary value problem are separated by at most on . Hint: Use Theorem 1.23 in the book.   "
+},
+{
+  "id": "sec-section-name-9-2-3",
+  "level": "2",
+  "url": "sec-section-name-9.html#sec-section-name-9-2-3",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  Use the result of exericse #2 in Section 1.3 of the text to prove that solution to the Cauchy problem for the heat equation (from Section 2.1) are unique.   "
+},
+{
+  "id": "sec-section-name-9-2-4",
+  "level": "2",
+  "url": "sec-section-name-9.html#sec-section-name-9-2-4",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  Consider the following non-proof of uniqueness of solutions to the Cauchy problem for the heat-equation:   Non-Proof: Suppose and are both solutions. Then is a solution to  Thus which is identically zero. Thus, for all and .   Question: Why isn't this a proof of uniqueness?   "
 }
 ]
 
