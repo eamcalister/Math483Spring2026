@@ -15,6 +15,7 @@
     <xi:include href="./activities/330ODEReviewWorksheet.ptx"/>
     <xi:include href="./activities/330PolarLaplacian.ptx"/>
     <xi:include href="./activities/330BnddConst.ptx"/>
+    <xi:include href="./activities/330WellPosedness.ptx"/>
     
 
     <!-- Add more xi:include files here to include them in the main course -->
