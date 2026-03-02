@@ -15,7 +15,7 @@
 </md>
 where the convolution is defined as
 <md>
-    (f\ast g)(x) = \int_{0}^{\infty} f(x-y)g(y)\,dy. 
+    (f\ast g)(x) = \int_{-\infty}^{\infty} f(x-y)g(y)\,dy. 
 </md>
 <em>Note:</em> We will need some assumptions about <m>f</m> and <m>g</m> to ensure the convolution converges (see theorem below). In order to really understand this fundamental property, we're just going to study the <m>\delta</m>-function for real.
     </p>
