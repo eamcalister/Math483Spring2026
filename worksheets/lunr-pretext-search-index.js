@@ -314,6 +314,96 @@ var ptx_lunr_docs = [
   "number": "4",
   "title": "",
   "body": "  Consider the following non-proof of uniqueness of solutions to the Cauchy problem for the heat-equation:   Non-Proof: Suppose and are both solutions. Then is a solution to  Thus which is identically zero. Thus, for all and .   Question: Why isn't this a proof of uniqueness?   "
+},
+{
+  "id": "sec-section-name-10",
+  "level": "1",
+  "url": "sec-section-name-10.html",
+  "type": "Worksheet",
+  "number": "",
+  "title": "Math 330 Delta Functions for Real",
+  "body": " Math 330 Delta Functions for Real    A key construction in the theory of PDEs is the -function. Indeed, we used it to solve the Cauchy problem for the heat equation and will use it in proving the Fourier Inversion Theorem. The key property is that where the convolution is defined as  Note: We will need some assumptions about and to ensure the convolution converges (see theorem below). In order to really understand this fundamental property, we're just going to study the -function for real.     A -net for a class of functions (e.g bounded and continuous on ) is a parametrized family of functions with such that whenever is in the indicated family.    The idea here is that whenever is a -net. Our goal now is to show how we can build -nets. To this end, suppose is a non-negative function such that From this, we consider the family given by , where .    Show that .    We will now prove the following theorem in a series of exercises:    Suppose is a continuous function on such that for all . With as above,     We prove this by showing that for any and , there exists an such that whenever , .    Why does showing that prove the theorem?      Show that         Using the continuity of , show that there exists a such that when .    Using the constant from the previous exercise, we now have Now we need to make the two \"tail\" integrals small by choosing correctly.    Argue that and     Now, because , there exists a such that     Give a brief reason that the last sentence is true, then use its conclusion to complete the proof of the theorem.      Explain the use of this theorem in proving Theorem 2.7 in your textbook. In other words, what's the -net and what is it being used for in this theorem? (Assume is continuous rather than just peicewise continuous.)     "
+},
+{
+  "id": "sec-section-name-10-2-2",
+  "level": "2",
+  "url": "sec-section-name-10.html#sec-section-name-10-2-2",
+  "type": "Definition",
+  "number": "5",
+  "title": "",
+  "body": "  A -net for a class of functions (e.g bounded and continuous on ) is a parametrized family of functions with such that whenever is in the indicated family.   "
+},
+{
+  "id": "sec-section-name-10-2-4",
+  "level": "2",
+  "url": "sec-section-name-10.html#sec-section-name-10-2-4",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "",
+  "body": "  Show that .   "
+},
+{
+  "id": "sec-section-name-10-2-6",
+  "level": "2",
+  "url": "sec-section-name-10.html#sec-section-name-10-2-6",
+  "type": "Theorem",
+  "number": "6",
+  "title": "",
+  "body": "  Suppose is a continuous function on such that for all . With as above,    "
+},
+{
+  "id": "sec-section-name-10-2-8",
+  "level": "2",
+  "url": "sec-section-name-10.html#sec-section-name-10-2-8",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "",
+  "body": "  Why does showing that prove the theorem?   "
+},
+{
+  "id": "sec-section-name-10-2-9",
+  "level": "2",
+  "url": "sec-section-name-10.html#sec-section-name-10-2-9",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "",
+  "body": "  Show that    "
+},
+{
+  "id": "sec-section-name-10-3-1",
+  "level": "2",
+  "url": "sec-section-name-10.html#sec-section-name-10-3-1",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "",
+  "body": "  Using the continuity of , show that there exists a such that when .   "
+},
+{
+  "id": "sec-section-name-10-3-3",
+  "level": "2",
+  "url": "sec-section-name-10.html#sec-section-name-10-3-3",
+  "type": "Worksheet Exercise",
+  "number": "5",
+  "title": "",
+  "body": "  Argue that and    "
+},
+{
+  "id": "sec-section-name-10-3-5",
+  "level": "2",
+  "url": "sec-section-name-10.html#sec-section-name-10-3-5",
+  "type": "Worksheet Exercise",
+  "number": "6",
+  "title": "",
+  "body": "  Give a brief reason that the last sentence is true, then use its conclusion to complete the proof of the theorem.   "
+},
+{
+  "id": "sec-section-name-10-3-6",
+  "level": "2",
+  "url": "sec-section-name-10.html#sec-section-name-10-3-6",
+  "type": "Worksheet Exercise",
+  "number": "7",
+  "title": "",
+  "body": "  Explain the use of this theorem in proving Theorem 2.7 in your textbook. In other words, what's the -net and what is it being used for in this theorem? (Assume is continuous rather than just peicewise continuous.)   "
 }
 ]
 
