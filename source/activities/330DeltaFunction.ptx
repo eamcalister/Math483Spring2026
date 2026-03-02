@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--uncomment <pretext> and <article> tags at the beginning and end for standalone pdf generation-->
+<!--pretext-->
+<!--article-->
+<worksheet margin="1in" bottom="1.25cm">
+    <title>Math 330 Delta Functions for Real</title>
+
+<page>
+
+<introduction>
+    <p>
+        A key construction in the theory of PDEs is the <m>\delta</m>-function. Indeed, we used it to solve the Cauchy problem for the heat equation and will use it in proving the Fourier Inversion Theorem. The key property is that 
+<md>
+(f\ast \delta)(x) = f(x),
+</md>
+where the convolution is defined as
+<md>
+    (f\ast g)(x) = \int_{0}^{\infty} f(x-y)g(y)\,dy. 
+</md>
+<em>Note:</em> We will need some assumptions about <m>f</m> and <m>g</m> to ensure the convolution converges (see theorem below). In order to really understand this fundamental property, we're just going to study the <m>\delta</m>-function for real.
+    </p>
+</introduction>
+
+<definition>
+    <statement>
+        <p>
+            A <term><m>\delta</m>-net</term> for a class of functions (e.g bounded and continuous on <m>\mathbb{R}</m>) is a parametrized family of functions <m>\{g_{\alpha}\}</m> with <m>\alpha &gt;0</m> such that
+<md>
+\lim_{\alpha\to 0^+} (f\ast g_{\alpha})(x) = f(x)
+</md>
+whenever <m>f</m> is in the indicated family.
+        </p>
+    </statement>
+</definition>
+
+<p>
+    The idea here is that <m>\delta(x) = \lim_{\alpha\to 0} g_{\alpha}(x)</m> whenever <m>g_{\alpha}</m> is a <m>\delta</m>-net. Our goal now is to show how we can build <m>\delta</m>-nets. To this end, suppose <m>g</m> is a non-negative function such that
+<md>
+\int_{-\infty}^{\infty} g(x)\,dx = 1.
+</md>
+From this, we consider the family given by <m>g_{\alpha}(x)  = \dfrac{1}{\alpha} g\left(\dfrac{x}{\alpha}\right)</m>, where <m>\alpha&gt;0</m>.
+</p>
+
+
+
+
+
+<exercise>
+    <statement>
+        <p>
+            Show that <m>\int_{-\infty}^{\infty} g_{\alpha}(x)\,dx = 1</m>.
+        </p>
+    </statement>
+</exercise>
+
+<p>
+    We will now prove the following theorem in a series of exercises:
+</p>
+
+<theorem>
+    <statement>
+        <p>
+            Suppose <m>f</m> is a continuous function on <m>\mathbb{R}</m> such that <m>|f(x)|\leq M</m> for all <m>x\in \mathbb{R}</m>. With <m>g_{\alpha}</m> as above,
+<md>
+\lim_{\alpha\to 0^+} (f\ast g_{\alpha})(x) = f(x).
+</md>
+        </p>
+    </statement>
+</theorem>
+
+<p>
+ We prove this by showing that for any <m>\epsilon &gt;0</m> and <m>x\in\mathbb{R}</m>, there exists an <m>A&gt;0</m> such that whenever <m>\alpha &lt; A</m>,  <m>|f(x) - (f\ast g_{\alpha})(x)| &lt;\epsilon</m>.   
+</p>
+
+<exercise>
+    <statement>
+        <p>
+            Why does showing that prove the theorem?
+        </p>
+    </statement>
+</exercise>
+
+
+<exercise>
+    <statement>
+        <p>
+            Show that
+<md>
+    <mrow> |f(x) - (f\ast g_{\alpha})(x)| = \amp \left| \int_{-\infty}^{\infty} (f(x) - f(x-y))g_{\alpha}(y)\, dy\right|</mrow>
+    <mrow> \leq \amp \int_{-\infty}^{\infty} |f(x) - f(x-y)|g_{\alpha}(y)\, dy. </mrow>
+</md>
+</p>
+    </statement>
+</exercise>
+
+</page>          
+
+<page>
+
+<exercise>
+<statement>
+    <p>
+        Using the continuity of <m>f</m>, show that there exists a <m>\delta &gt; 0</m> such that 
+<md>
+\int_{-\delta}^{\delta} |f(x) - f(x-y)| g_{\alpha}(y)\,dy &lt; \frac{\epsilon}{2},
+</md>
+when <m>|y|&lt;\delta</m>.
+    </p>
+</statement>
+</exercise>
+
+<p>
+    Using the constant <m>\delta</m> from the previous exercise, we now have 
+<md>
+    <mrow>\int_{-\infty}^{\infty} |f(x) - f(x-y)| g_{\alpha}(y)\,dy= \amp \int_{-\infty}^{-\delta} |f(x) - f(x-y)| g_{\alpha}(y)\,dy + \int_{-\delta}^{\delta} |f(x) - f(x-y)| g_{\alpha}(y)\,dy +</mrow>
+    <mrow> \amp \int_{\delta}^{\infty} |f(x) - f(x-y)| g_{\alpha}(y)\,dy</mrow>
+    <mrow> &lt; \amp \int_{-\infty}^{-\delta} |f(x) - f(x-y)| g_{\alpha}(y)\,dy + \frac{\epsilon}{2} + </mrow>
+    <mrow> \amp \int_{\delta}^{\infty} |f(x) - f(x-y)| g_{\alpha}(y)\,dy</mrow>
+</md>
+
+
+Now we need to make the two "tail" integrals small by choosing <m>\alpha</m> correctly.
+</p>
+
+
+<exercise>
+    <statement>
+        <p>
+            Argue that 
+<md>
+    <mrow> \int_{\delta}^{\infty} |f(x) - f(x-y)| g_{\alpha}(y)\, dy \leq \amp \frac{2M}{\alpha} \int_{\delta}^{\infty} g\left(\frac{y}{\alpha}\right)\,dy</mrow>
+    <mrow> = \amp 2M \int_{\delta/\alpha}^{\infty} g(u)\,du. </mrow>
+</md>
+and
+<md>
+    <mrow>\int_{-\infty}^{-\delta} |f(x) - f(x-y)| g_{\alpha}(y)\, dy \leq  \amp \frac{2M}{\alpha} \int_{-\infty}^{-\delta} g\left(\frac{y}{\alpha}\right)\,dy</mrow>
+    <mrow> =  \amp 2M \int_{-\infty}^{-\delta/\alpha} g(u)\,du.</mrow>
+</md>
+        </p>
+    </statement>
+</exercise>
+
+<p>
+    Now, because <m>\int_{-\infty}^{\infty} g(x) \,dx = 1</m>, there exists a <m>b&gt;0</m> such that 
+\[
+\int_{-\infty}^{-b} g(u)\,du + \int_{b}^{\infty} g(u)\,du = 1-\int_{-b}^{b} g(u)\,du < \frac{\epsilon}{4M}.
+\]
+</p>
+
+
+
+
+</page>
+
+ 
+
+
+</worksheet>
+<!--/article-->
+<!--/pretext-->
