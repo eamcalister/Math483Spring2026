@@ -142,9 +142,9 @@ and
 
 <p>
     Now, because <m>\int_{-\infty}^{\infty} g(x) \,dx = 1</m>, there exists a <m>b&gt;0</m> such that 
-\[
-\int_{-\infty}^{-b} g(u)\,du + \int_{b}^{\infty} g(u)\,du = 1-\int_{-b}^{b} g(u)\,du < \frac{\epsilon}{4M}.
-\]
+<md>
+\int_{-\infty}^{-b} g(u)\,du + \int_{b}^{\infty} g(u)\,du = 1-\int_{-b}^{b} g(u)\,du &lt; \frac{\epsilon}{4M}.
+</md>
 </p>
 
 
