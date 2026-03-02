@@ -112,7 +112,8 @@ when <m>|y|&lt;\delta</m>.
 <p>
     Using the constant <m>\delta</m> from the previous exercise, we now have 
 <md>
-    <mrow>\int_{-\infty}^{\infty} |f(x) - f(x-y)| g_{\alpha}(y)\,dy= \amp \int_{-\infty}^{-\delta} |f(x) - f(x-y)| g_{\alpha}(y)\,dy + \int_{-\delta}^{\delta} |f(x) - f(x-y)| g_{\alpha}(y)\,dy +</mrow>
+    <mrow>\int_{-\infty}^{\infty} |f(x) - f(x-y)| g_{\alpha}(y)\,dy= \amp \int_{-\infty}^{-\delta} |f(x) - f(x-y)| g_{\alpha}(y)\,dy + </mrow>
+    <mrow> \amp \int_{-\delta}^{\delta} |f(x) - f(x-y)| g_{\alpha}(y)\,dy +</mrow>
     <mrow> \amp \int_{\delta}^{\infty} |f(x) - f(x-y)| g_{\alpha}(y)\,dy</mrow>
     <mrow> &lt; \amp \int_{-\infty}^{-\delta} |f(x) - f(x-y)| g_{\alpha}(y)\,dy + \frac{\epsilon}{2} + </mrow>
     <mrow> \amp \int_{\delta}^{\infty} |f(x) - f(x-y)| g_{\alpha}(y)\,dy</mrow>
@@ -129,7 +130,7 @@ Now we need to make the two "tail" integrals small by choosing <m>\alpha</m> cor
             Argue that 
 <md>
     <mrow> \int_{\delta}^{\infty} |f(x) - f(x-y)| g_{\alpha}(y)\, dy \leq \amp \frac{2M}{\alpha} \int_{\delta}^{\infty} g\left(\frac{y}{\alpha}\right)\,dy</mrow>
-    <mrow> = \amp 2M \int_{\delta/\alpha}^{\infty} g(u)\,du. </mrow>
+    <mrow> = \amp 2M \int_{\delta/\alpha}^{\infty} g(u)\,du </mrow>
 </md>
 and
 <md>
@@ -147,8 +148,21 @@ and
 </md>
 </p>
 
+<exercise>
+    <statement>
+        <p>
+            Give a brief reason that the last sentence is true, then use its conclusion to complete the proof of the theorem.
+        </p>
+    </statement>
+</exercise>
 
-
+<exercise>
+    <statement>
+        <p>
+            Explain the use of this theorem in proving Theorem 2.7 in your textbook. In other words, what's the <m>\delta</m>-net and what is it being used for in this theorem? (Assume <m>\phi</m> is continuous rather than just peicewise continuous.)
+        </p>
+    </statement>
+</exercise>
 
 </page>
 
