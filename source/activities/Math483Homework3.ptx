@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--uncomment <pretext> and <article> tags at the beginning and end for standalone pdf generation-->
+<!--pretext-->
+<!--article-->
+<worksheet margin="1in" bottom="1.25cm">
+    <title>Math 483 Homework 3</title>
+
+            
+	<objectives>
+		<ul>
+			<li>
+				<p>
+					Define the Dirichlet kernel.
+				</p>
+			</li>
+            <li>
+                <p>
+                    Prove facts about the Dirichlet kernel necessary to prove convergence results for Fourier series.
+                </p>
+            </li>
+	  	</ul>
+    </objectives>
+<page>
+
+<p>
+    For this assignment we need to set some notation:
+    <ul>
+        <li>
+            <p>
+                <m>f</m> is a piecewise continuous <m>2\pi</m> periodic function on <m>\mathbb{R}</m> that is square integrable on <m>[-\pi,\pi]</m>.
+            </p>
+        </li>
+        <li>
+            <p>
+                The <m>N</m>-th partial sum of the Fourier series for <m>f</m> is given by
+                <md>
+                    S_N^f(x) = \frac{a_0}{2} + \sum_{n=1}^N (a_n\cos(nx) + b_n\sin(nx)),
+                </md>
+                where the formulae for <m>a_n</m> and <m>b_n</m> are given as in our textbook.
+            </p>
+        </li>
+    </ul>
+</p>
+
+<exercise>
+    <statement>
+        <p>
+            Show that
+            <md>
+                S_N^f(x) = \sum_{n=-N}^{N} c_n e^{inx},
+            </md>
+            where 
+            <md>
+                c_n = \frac{1}{2\pi}\int_{-\pi}^{\pi} f(\theta)e^{-in\theta}\,d\theta.
+            </md>
+            
+        </p>
+    </statement>
+</exercise>
+
+<exercise>
+    <statement>
+        <p>
+            Show that
+            <md>
+                S_N^f(x) = \frac{1}{2\pi} \int_{-\pi}^{\pi}\sum_{n=-N}^{n} f(x+\phi) e^{in\phi}\,d\phi.
+            </md>
+            
+        </p>
+    </statement>
+</exercise>
+
+<p>
+    The previous exercise shows that 
+    <md>
+         S_N^f(x) = \int_{-\pi}^{\pi} f(x+\phi) D_{N}(\phi)\,d\phi,
+    </md>
+    where
+    <md>
+        D_N(\phi) = \frac{1}{2\pi} \sum_{n=-N}^{N} e^{in\phi}.
+    </md>
+    The function <m>D_N</m> is called the <term><m>N</m>-th Dirichlet kernel</term>. 
+</p>
+
+
+</page>
+    
+
+
+
+</worksheet>
+<!--/article-->
+<!--/pretext-->
