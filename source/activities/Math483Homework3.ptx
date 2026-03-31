@@ -82,6 +82,38 @@
     The function <m>D_N</m> is called the <term><m>N</m>-th Dirichlet kernel</term>. 
 </p>
 
+<exercise>
+    <statement>
+        <p>
+            Prove the following alternative expressions for <m>D_N(\phi)</m>:
+            <ol>
+                <li>
+                    <p>
+                        <m>D_N(\phi) = \frac{1}{2\pi} + \frac{1}{\pi}\sum_{n=1}^{N}\cos(n\phi)</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <m>D_N(\phi) = \frac{e^{i(N+1)\phi}-e^{-iN\phi}}{e^{i\phi}-1}</m>
+                    </p>
+                </li>
+            </ol>
+            Hint for (b): Factor out <m>e^{-iN\phi}</m>, then use the formula for the sum of a finite geometric series.
+        </p>
+    </statement>
+</exercise>
+
+<exercise>
+    <statement>
+        <p>
+            Prove that 
+            <md>
+                \int_{-\pi}^{0}D_N(\phi)\,d\phi = \int_{0}^{\pi}D_N(\phi)\,d\phi = \frac{1}{2}.
+            </md>
+            
+        </p>
+    </statement>
+</exercise>
 
 </page>
     
