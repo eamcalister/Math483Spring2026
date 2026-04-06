@@ -322,7 +322,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet",
   "number": "",
   "title": "Math 483 Homework 3",
-  "body": " Math 483 Homework 3     Define the Dirichlet kernel.    Prove facts about the Dirichlet kernel necessary to prove convergence results for Fourier series.      For this assignment we need to set some notation:    is a piecewise continuous periodic function on that is square integrable on .    The -th partial sum of the Fourier series for is given by where the formulae for and are given as in our textbook.       Show that where       Show that     The previous exercise shows that where The function is called the -th Dirichlet kernel .    Prove the following alternative expressions for :            Hint for (b): Factor out , then use the formula for the sum of a finite geometric series.      Prove that      "
+  "body": " Math 483 Homework 3     Define the Dirichlet kernel.    Prove facts about the Dirichlet kernel necessary to prove convergence results for Fourier series.      For this assignment we need to set some notation:    is a piecewise continuous periodic function on that is square integrable on .    The -th partial sum of the Fourier series for is given by where the formulae for and are given as in our textbook.       Show that where       Show that     The previous exercise shows that where The function is called the -th Dirichlet kernel .    Prove the following alternative expressions for :            Hint for (b): Factor out , then use the formula for the sum of a finite geometric series.        Prove that      "
 },
 {
   "id": "sec-section-name-10-2",
@@ -370,9 +370,9 @@ var ptx_lunr_docs = [
   "body": "  Prove the following alternative expressions for :            Hint for (b): Factor out , then use the formula for the sum of a finite geometric series.   "
 },
 {
-  "id": "sec-section-name-10-3-6",
+  "id": "sec-section-name-10-4-1",
   "level": "2",
-  "url": "sec-section-name-10.html#sec-section-name-10-3-6",
+  "url": "sec-section-name-10.html#sec-section-name-10-4-1",
   "type": "Worksheet Exercise",
   "number": "4",
   "title": "",
