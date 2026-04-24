@@ -17,7 +17,7 @@
     <xi:include href="./activities/330BnddConst.ptx"/>
     <xi:include href="./activities/330WellPosedness.ptx"/>
     <xi:include href="./activities/Math483Homework3.ptx"/>
-    
+    <xi:include href="./activities/Math483FinalHW.ptx"/>   
 
     <!-- Add more xi:include files here to include them in the main course -->
   </article>
